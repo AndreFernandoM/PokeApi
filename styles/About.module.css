@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-right: auto;
+    padding: 80px;
+    /* margin-left: auto; */
+    margin: auto;
+    max-width: 900px;
+    gap: 70px;
+    flex-direction: column;
+}
+
+.text{
+    text-align: center;
+    width: 75%;
+    font-weight: 300;
+}
+
+.title{
+    
+}
+
+.text span a{
+
+    text-decoration: none;
+    font-weight: 400;
+    color: #3f00ff;
+}
