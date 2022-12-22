@@ -1,0 +1,113 @@
+.cardContainer{
+    display: block;
+    background-color: #505050d4;
+    border: 3px solid #ef5564;
+    border-radius: 20px;
+    height: 250px;
+    box-shadow: 0.5rem 0.5rem #000000b3, -0.5rem -0.5rem #cbcbcb;
+    margin-right: 65px;
+}
+
+.cardTitle{
+    display: flex;
+    align-items: center;
+    color: #000000ab;
+    background: #5a5a5a;
+    border-radius: 17px 17px 0 0;
+    justify-content: center;
+    height: 40px;
+    gap:8px;
+    text-align: center;
+}
+
+.cardTitle h3{
+    color: white;
+    text-transform: capitalize;
+}
+
+.cardTitle p{
+    align-self: center;
+    font-weight: 500;
+    color: white;
+}
+
+.cardIdBox{
+    background-color: #ec3d4f;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.cardButtonTurn{
+    position: absolute;
+    width: 20px;
+    background: none;
+    border: none;
+    -webkit-filter: drop-shadow(0 3px 2px rgb(0, 0, 0));
+    -moz-filter: drop-shadow(0 3px 2px rgb(0, 0, 0));
+    -ms-filter: drop-shadow(0 3px 2px rgb(0, 0, 0));
+    -o-filter: drop-shadow(0 3px 2px rgb(0, 0, 0));
+    filter: drop-shadow(0 3px 2px rgb(0, 0, 0));
+    width: fit-content;
+    cursor: pointer;
+}
+
+.cardRotateArrow{
+filter: invert();
+}
+
+
+.cardImg{
+    width: 200px;
+    object-fit:none
+}
+
+.cardImgButton{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.pokeInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px
+}
+
+.cardButton{
+    width: 125px;
+    height: 25px;
+   background-color: transparent;
+   border: 1px solid #353535;
+   border-radius: 3px;
+   color: white;
+   transition: 300ms;
+   margin: 5px;
+   cursor: pointer;
+   
+
+}
+
+.cardButton:hover{
+    background-color: #35353580;
+    border: 1px solid #cbcbcb;
+
+}
+.cardInfo{
+    color: white;
+    text-decoration: none;
+    text-transform:capitalize;
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+    /* border: 1px solid #353535; */
+    border-radius: 3px;
+    border-bottom: 2px solid;
+}
+
+.cardInfo:hover{
+    background: rgb(90,90,90);
+    background: linear-gradient(0deg, rgba(90,90,90,1) 0%, rgba(255,255,255,0) 90%);
+    transition: 450ms;
+
+}
