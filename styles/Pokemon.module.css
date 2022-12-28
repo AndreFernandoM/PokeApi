@@ -1,0 +1,69 @@
+.Rock{
+    color: #b69e31
+}
+.Ghost{
+    color: #70559b
+}
+.Steel{
+    color: #b7b9d0
+}
+.Water{
+    color: #6493eb
+}
+.Grass{
+    color: #74cb48
+}
+.Psychic{
+    color: #fb5584
+}
+.Ice{
+    color: #9ad6df
+}
+.Dark{
+    color: #75574c
+}
+.Fairy{
+    color: #e69eac
+}
+.Normal{
+    color: #aaa67f
+}
+.Fighting{
+    color: #c12239
+}
+.Flying{
+    color: #a891ec
+}
+.Poison{
+    color: #b69e31
+}
+.Ground{
+    color: #dec16b
+}
+.Bug{
+    color: #a7b723
+}
+.Fire{
+    color: #f57d31;
+}
+.Electric{    
+    color: #f9cf30
+}
+.Dragon{
+    color: #7037ff
+}
+
+
+.statsBar {
+    width: 300px;
+    background: transparent;
+    height: 8px;
+}
+.statsBar::-webkit-progress-value{
+    background-color: #fc79ba; 
+}
+
+.statsBar[value]::-webkit-progress-bar {
+    background-color: #e6eaed; 
+
+  }

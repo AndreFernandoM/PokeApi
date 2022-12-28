@@ -60,7 +60,7 @@ export default function PokeCard({ pokemon }) {
           </button>
           <Image
             src={pokeSrc()}
-            width={50}
+            width={200}
             height={125}
             unoptimized={true}
             alt={pokemon.name}

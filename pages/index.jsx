@@ -1,8 +1,7 @@
 import styles from "../styles/Home.module.css";
 
 import Image from "next/image";
-
-import LazyLoad from "react-lazy-load-image-component";
+import { useState } from "react";
 
 import PokeCard from "../components/PokeCard";
 
@@ -29,9 +28,12 @@ export async function getStaticProps() {
 }
 
 export default function Home({ pokemons }) {
+  const [showMore, setShowMore] = useState(false);
+
+  const [showTen, setShowTen] = useState(151);
+
   return (
     <>
-      {/* {pokemon.id.sprites.front_default} */}
       <div className={styles.container}>
         <h1>PokeAPI</h1>
         <Image
@@ -42,10 +44,40 @@ export default function Home({ pokemons }) {
         />
       </div>
       <div className={styles.pokeContainer}>
-        {pokemons.map((pokemon) => (
-          <PokeCard pokemon={pokemon} key={pokemon.id} />
-        ))}
+        {pokemons.map((pokemon, index) =>
+          index < showTen ? (
+            <PokeCard pokemon={pokemon} key={pokemon.id} />
+          ) : (
+            <></>
+          )
+        )}
+      </div>
+      <div className={styles.showMoreContainer}>
+        <button
+          onClick={() => {
+            setShowTen(showTen + 50);
+          }}
+          className={styles.showMoreButton}
+        >
+          {showTen < 950 ? "Mostrar Mais" : "Mostrar Menos"}
+        </button>
       </div>
     </>
   );
 }
+
+// {pokemons.map((pokemon, index) =>
+//   !showMore ? (
+//     index < 151 ? (
+//       <PokeCard pokemon={pokemon} key={pokemon.id} />
+//     ) : (
+//       <div key={pokemon.id} />
+//     )
+//   ) : (
+//     <PokeCard pokemon={pokemon} key={pokemon.id} />
+//   )
+// )}
+
+// onClick={() => {
+//   setShowMore(!showMore);
+// }}
