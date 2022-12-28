@@ -5,7 +5,7 @@ import { useState, useCallback } from "react";
 
 import styles from "../styles/Gifs.module.css";
 
-const Gifs = ({ pokemon }) => {
+const Gifs = ({ pokemon, display }) => {
   let ext = ".gif";
 
   pokemon.id <= 649 ? (ext = ".gif") : (ext = ".png");
@@ -38,7 +38,10 @@ const Gifs = ({ pokemon }) => {
   return (
     <div>
       <div className={styles.gifImgButton}>
-        <button className={styles.gifButtonTurn} onClick={setpokeBackSprites}>
+        <button
+          className={`${styles.gifButtonTurn} ${display}`}
+          onClick={setpokeBackSprites}
+        >
           <Image
             src={"/images/rotate-arrow.png"}
             width={30}
@@ -58,7 +61,7 @@ const Gifs = ({ pokemon }) => {
         />
       </div>
 
-      <div className={styles.pokeInfo}>
+      <div className={`${styles.pokeInfo} ${display}`}>
         <button className={styles.gifButton} onClick={setPokeSprites}>
           {pokeSprites ? "Normal" : "Shiny"}
         </button>

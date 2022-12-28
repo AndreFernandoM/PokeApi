@@ -1,58 +1,167 @@
-.Rock{
-    color: #b69e31
-}
-.Ghost{
-    color: #70559b
-}
-.Steel{
-    color: #b7b9d0
-}
-.Water{
-    color: #6493eb
-}
-.Grass{
-    color: #74cb48
-}
-.Psychic{
-    color: #fb5584
-}
-.Ice{
-    color: #9ad6df
-}
-.Dark{
-    color: #75574c
-}
-.Fairy{
-    color: #e69eac
-}
-.Normal{
-    color: #aaa67f
-}
-.Fighting{
-    color: #c12239
-}
-.Flying{
-    color: #a891ec
-}
-.Poison{
-    color: #b69e31
-}
-.Ground{
-    color: #dec16b
-}
-.Bug{
-    color: #a7b723
-}
-.Fire{
-    color: #f57d31;
-}
-.Electric{    
-    color: #f9cf30
-}
-.Dragon{
-    color: #7037ff
+.pokeInfoContainer{
+    width: 500px;
+    height: 100%;
+    margin:5% auto 0 auto;
+    border-radius: 12px;
 }
 
+.pokeTopContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    gap: 30px;
+}
+
+.pokeTitleContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.nextButton, .backButton{
+    height: 30px;
+    width: 30px;
+    object-fit: none;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.nextButton:hover, .backButton:hover{
+    position: relative;
+    transition-duration: 300ms;
+    top: -3px;
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,.8));
+}
+
+.pokeImg{
+    width: fit-content;
+    height: auto;
+}
+
+.types{
+    display: flex;
+    gap: 50px;
+    width: fit-content;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+}
+
+.Rock{
+    background-color: #b69e31;
+    border: 4px solid #b69e31;
+    text-transform: capitalize;
+    border-radius: 10px;
+    
+}
+.Ghost{
+    background-color: #70559b;
+    border: 4px solid #70559b;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Steel{
+    background-color: #b7b9d0;
+    border: 4px solid #b7b9d0;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Water{
+    background-color: #6493eb;
+    border: 4px solid #6493eb;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Grass{
+    background-color: #74cb48;
+    border: 4px solid #74cb48;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Psychic{
+    background-color: #fb5584;
+    border: 4px solid #fb5584;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Ice{
+    background-color: #9ad6df;
+    border: 4px solid #9ad6df;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Dark{
+    background-color: #75574c;
+    border: 4px solid #75574c;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Fairy{
+    background-color: #e69eac;
+    border: 4px solid #e69eac;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Normal{
+    background-color: #aaa67f;
+    border: 4px solid #aaa67f;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Fighting{
+    background-color: #c12239;
+    border: 4px solid #c12239;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Flying{
+    background-color: #a891ec;
+    border: 4px solid #a891ec;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Poison{
+    background-color: #b69e31;
+    border: 4px solid #b69e31;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Ground{
+    background-color: #dec16b;
+    border: 4px solid #dec16b;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Bug{
+    background-color: #a7b723;
+    border: 4px solid #a7b723;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Fire{ 
+    background-color: #f57d31;
+    border: 4px solid #f57d31;
+    border-radius: 10px;
+    text-transform: capitalize;
+    
+
+}
+.Electric{    
+    background-color: #f9cf30;
+    border: 4px solid #f9cf30;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.Dragon{
+    background-color: #7037ff;
+    border: 4px solid #7037ff;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
 
 .statsBar {
     width: 300px;
@@ -65,5 +174,65 @@
 
 .statsBar[value]::-webkit-progress-bar {
     background-color: #e6eaed; 
+}
 
-  }
+.none{
+    display: none;
+}
+
+
+.pokeInfoMiniContainer{
+    background-color: white;
+    border-radius: 12px;
+}
+
+.pokeTopInfo{
+    margin:10px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pokeWeightHeight{
+    font-weight: 300;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin:16px 0;
+}
+
+.pokeStatsWeightHeight{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* margin-left: 8px; */
+}
+
+.pokeStatsContainer{
+    display: flex;
+    height: 275px;
+    justify-content: space-around;
+}
+
+.pokeStatsContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    justify-content: center;
+}
+
+.pokeStatsContent2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    justify-content: center;
+}
+
+.pokeStatsNumbers{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
