@@ -169,11 +169,11 @@
     height: 8px;
 }
 .statsBar::-webkit-progress-value{
-    background-color: #fc79ba; 
+    background-color: #b4e2a8; 
 }
 
 .statsBar[value]::-webkit-progress-bar {
-    background-color: #e6eaed; 
+    background-color: #e6eaed ; 
 }
 
 .none{

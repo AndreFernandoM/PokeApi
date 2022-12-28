@@ -190,7 +190,7 @@ export default function Pokemon({ pokemon }) {
                     <progress
                       max="300"
                       value={item.base_stat}
-                      className={styles.statsBar}
+                      className={`${styles.statsBar}`}
                     />
                   </div>
                 );
