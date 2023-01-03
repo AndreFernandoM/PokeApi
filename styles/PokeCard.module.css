@@ -57,7 +57,8 @@ filter: invert();
 
 
 .cardImg{
-    width: 200px;
+    /* width: 200px; */
+    /* height: auto; */
     object-fit:none
 }
 
@@ -100,7 +101,6 @@ filter: invert();
     text-align: center;
     margin: 10px;
     width: 150px;
-    /* border: 1px solid #353535; */
     border-radius: 3px;
     border-bottom: 2px solid;
 }

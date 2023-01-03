@@ -14,3 +14,7 @@
     font-family: 'Roboto';
     /* color: white; */
 }
+
+.none{
+    display: none;
+}
