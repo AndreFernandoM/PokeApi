@@ -1,6 +1,6 @@
 > #### TO DO
 >
-> - Responsiveness.
+> - Mobile.
 > - Not Found Page - 404.
 
 
